@@ -85,3 +85,8 @@ const asyncFunction = async () => {
 ### redis
 
 Expose original redis module from : https://github.com/NodeRedis/node_redis
+
+```js
+const { redis } = require('node-async-redis');
+const originalRedisClient = redis.createClient();
+```
