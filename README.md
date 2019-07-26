@@ -1,7 +1,7 @@
 Node Redis Async - async redis client for node.js
 ===========================
 [![npm](https://img.shields.io/npm/v/node-async-redis.svg)](https://www.npmjs.com/package/node-async-redis)
-[![Coverage Status](github/WarmVissarutRonaldoDude/node-async-redis/badge.svg)](github/WarmVissarutRonaldoDude/node-async-redis)
+[![Coverage Status](https://coveralls.io/github/WarmVissarutRonaldoDude/node-async-redis/badge.svg)](https://coveralls.io/github/WarmVissarutRonaldoDude/node-async-redis)
 
 ## How to install
 
