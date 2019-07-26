@@ -1,0 +1,7 @@
+coverage/
+.gitignore
+jest.config.json
+.eslintrc
+*.test.js
+setupTest.js
+yarn.lock

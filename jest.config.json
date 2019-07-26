@@ -9,6 +9,6 @@
   },
   "testMatch": ["**/?(*.)(test).js?(x)"],
   "testPathIgnorePatterns": ["/node_modules/"],
-  "setupFilesAfterEnv": ["<rootDir>/setupTests.js"]
+  "setupFilesAfterEnv": ["<rootDir>/setupTest.js"]
 }
   

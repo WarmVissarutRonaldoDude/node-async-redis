@@ -1,5 +1,5 @@
 {
-  "name": "node-redis-async",
+  "name": "node-async-redis",
   "version": "1.0.0",
   "description": "Async Redis for NodeJS",
   "main": "src/index.js",
@@ -10,7 +10,7 @@
     "lint": "eslint ./src"
   },
   "keywords": [
-    "node-redis-async",
+    "node-async-redis",
     "redis",
     "async"
   ],

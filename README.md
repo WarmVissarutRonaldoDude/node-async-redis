@@ -1,5 +1,17 @@
 Node Redis Async - async redis client for node.js
 ===========================
+[![npm](https://img.shields.io/npm/v/node-async-redis.svg)](https://www.npmjs.com/package/node-async-redis)
+[![Coverage Status](github/WarmVissarutRonaldoDude/node-async-redis/badge.svg)](github/WarmVissarutRonaldoDude/node-async-redis)
+
+## How to install
+
+```
+yarn add node-async-redis
+```
+or
+```
+npm install node-async-redis
+```
 
 ## Usage Example
 
@@ -27,7 +39,7 @@ process.env.REDIS_PORT=6379
 ```
 
 ```js
-const { redisClient } = require('node-redis-async');
+const { redisClient } = require('node-async-redis');
 
 redisClient.on("error", (error) => {
     console.log("Error : ", error);
@@ -45,7 +57,7 @@ const asyncFunction = async () => {
 For available configuration please take a look here : https://github.com/NodeRedis/node_redis
 
 ```js
-const { getRedisClient } = require('node-redis-async');
+const { getRedisClient } = require('node-async-redis');
 const redisClient = getRedisClient({
    host: 127.0.0.1
    port: 6379,
