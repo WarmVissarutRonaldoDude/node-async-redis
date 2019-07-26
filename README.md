@@ -18,14 +18,16 @@ npm install node-async-redis
 
 ### createRedisClient
 
-Create redis client which expose all available redis command with async prefix
+Create redis client which expose all available redis command with async prefix.
+
 Example:
 ```js
 const redisClient = createRedisClient();
 await redisClient.setAsync("string key", "string value");
 ```
 
-Original functions still exist
+Original functions still exist.
+
 Example:
 ```js
 redisClient.set("string key", "string value");
