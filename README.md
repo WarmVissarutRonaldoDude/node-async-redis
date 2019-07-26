@@ -14,11 +14,14 @@ or
 npm install node-async-redis
 ```
 
-## Usage Example
+## How to use
 
-Expose all available redis command with async prefix
+### createRedisClient
+
+Create redis client which expose all available redis command with async prefix
 Example:
 ```js
+const redisClient = createRedisClient();
 await redisClient.setAsync("string key", "string value");
 ```
 
@@ -30,7 +33,7 @@ redisClient.set("string key", "string value");
 
 See all commands here : https://github.com/NodeRedis/redis-commands
 
-### Using async redis client with default config
+#### Create async redis client with default config
 
 Client will automatically created with default config and read connection config from `process.env`
 
@@ -40,8 +43,9 @@ process.env.REDIS_PORT=6379
 ```
 
 ```js
-const { redisClient } = require('node-async-redis');
+const { createRedisClient } = require('node-async-redis');
 
+const redisClient = createRedisClient();
 redisClient.on("error", (error) => {
     console.log("Error : ", error);
 })
@@ -53,13 +57,13 @@ const asyncFunction = async () => {
 }
 ```
 
-### Using async redis client with custom config
+#### Create async redis client with custom config
 
 For available configuration please take a look here : https://github.com/NodeRedis/node_redis
 
 ```js
-const { getRedisClient } = require('node-async-redis');
-const redisClient = getRedisClient({
+const { createRedisClient } = require('node-async-redis');
+const redisClient = createRedisClient({
    host: "127.0.0.1"
    port: "6379",
    enable_offline_queue: false
@@ -75,3 +79,7 @@ const asyncFunction = async () => {
     ...
 }
 ```
+
+### redis
+
+Expose original redis module from : https://github.com/NodeRedis/node_redis

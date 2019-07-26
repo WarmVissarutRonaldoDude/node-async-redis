@@ -15,16 +15,14 @@ const promisifyRedis = client => {
   return promisifyClient;
 };
 
-const getRedisClient = (
+const createRedisClient = (
   options = {
     host: process.env.REDIS_HOST,
     port: process.env.REDIS_PORT
   }
 ) => promisifyRedis(redis.createClient(options));
 
-const redisClient = getRedisClient();
-
 module.exports = {
-  redisClient,
-  getRedisClient
+  createRedisClient,
+  redis
 };
