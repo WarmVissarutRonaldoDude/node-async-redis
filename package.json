@@ -16,6 +16,13 @@
   ],
   "author": "Visalud Tantiwattanarom <loliconneko@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/WarmVissarutRonaldoDude/node-async-redis"
+  },
+  "bugs": {
+    "url": "https://github.com/WarmVissarutRonaldoDude/node-async-redis/issues"
+  },
   "devDependencies": {
     "eslint": "6.1.0",
     "eslint-config-airbnb": "17.1.1",
