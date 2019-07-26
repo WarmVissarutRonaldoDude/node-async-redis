@@ -1,0 +1,64 @@
+Node Redis Async - async redis client for node.js
+===========================
+
+## Usage Example
+
+Expose all available redis command with async prefix
+Example:
+```js
+await redisClient.setAsync("string key", "string value");
+```
+
+Original functions still exist
+Example:
+```js
+redisClient.set("string key", "string value");
+```
+
+See all commands here : https://github.com/NodeRedis/redis-commands
+
+### Using async redis client with default config
+
+Client will automatically created with default config and read connection config from `process.env`
+
+```
+process.env.REDIS_HOST=127.0.0.1
+process.env.REDIS_PORT=6379
+```
+
+```js
+const { redisClient } = require('node-redis-async');
+
+redisClient.on("error", (error) => {
+    console.log("Error : ", error);
+})
+
+const asyncFunction = async () => {
+    await redisClient.setAsync("string key", "string value");
+    const value = await redisClient.getAsync("string key");
+    ...
+}
+```
+
+### Using async redis client with custom config
+
+For available configuration please take a look here : https://github.com/NodeRedis/node_redis
+
+```js
+const { getRedisClient } = require('node-redis-async');
+const redisClient = getRedisClient({
+   host: 127.0.0.1
+   port: 6379,
+   enable_offline_queue: false
+});
+
+redisClient.on("error", (error) => {
+    console.log("Error : ", error);
+})
+
+const asyncFunction = async () => {
+    await redisClient.setAsync("string key", "string value");
+    const value = await redisClient.getAsync("string key");
+    ...
+}
+```

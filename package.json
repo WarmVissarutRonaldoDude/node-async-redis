@@ -1,0 +1,36 @@
+{
+  "name": "node-redis-async",
+  "version": "1.0.0",
+  "description": "Async Redis for NodeJS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --config=jest.config.json",
+    "watch": "jest --config=jest.config.json --watch",
+    "coverage": "jest --config=jest.config.json --coverage",
+    "lint": "eslint ./src"
+  },
+  "keywords": [
+    "node-redis-async",
+    "redis",
+    "async"
+  ],
+  "author": "Visalud Tantiwattanarom <loliconneko@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "eslint-config-airbnb": "17.1.1",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jest": "22.13.6",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "jest": "24.8.0",
+    "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "dotenv": "8.0.0",
+    "redis": "2.8.0",
+    "redis-commands": "1.5.0"
+  }
+}
