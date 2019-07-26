@@ -60,8 +60,8 @@ For available configuration please take a look here : https://github.com/NodeRed
 ```js
 const { getRedisClient } = require('node-async-redis');
 const redisClient = getRedisClient({
-   host: 127.0.0.1
-   port: 6379,
+   host: "127.0.0.1"
+   port: "6379",
    enable_offline_queue: false
 });
 
