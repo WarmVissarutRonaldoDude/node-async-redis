@@ -1,4 +1,4 @@
-Node Redis Async - async redis client for node.js
+Node Async Redis - async redis client for node.js
 ===========================
 [![Build Status](https://travis-ci.org/WarmVissarutRonaldoDude/node-async-redis.svg?branch=master)](https://travis-ci.org/WarmVissarutRonaldoDude/node-async-redis)
 [![npm](https://img.shields.io/npm/v/node-async-redis.svg)](https://www.npmjs.com/package/node-async-redis)
